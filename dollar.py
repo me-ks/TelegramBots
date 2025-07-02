@@ -3,10 +3,10 @@ import requests
 import re
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-TOKEN = '7896356182:AAHoJhcHS-6QRlG_cvTSbs8EmFzJXLEGTa8'  
+TOKEN = '...'  
 bot = telebot.TeleBot(TOKEN)
 
-# Функція отримання курсу USDT/UAH
+
 def get_usdt_uah():
     url = "https://api.binance.com/api/v3/ticker/price?symbol=USDTUAH"
     response = requests.get(url)
@@ -31,7 +31,7 @@ def back_markup():
 
 def exchange_markup():
     markup = InlineKeyboardMarkup()
-    markup.add(InlineKeyboardButton('💱 Обмін', url='https://t.me/maxzbl'))  
+    markup.add(InlineKeyboardButton('💱 Обмін', url='https://t.me/...'))  
     markup.add(InlineKeyboardButton('🔙 Назад', callback_data='back'))
     return markup
 
